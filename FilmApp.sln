@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmApp.Data", "FilmApp.Data\FilmApp.Data.csproj", "{70A94C61-5E87-48DA-AA58-68EE9AE07BC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmApp.Business", "FilmApp.Business\FilmApp.Business.csproj", "{5909F3B2-A9D7-42A0-B318-1BDCE686743B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmApp.WebApi", "FilmApp.WebApi\FilmApp.WebApi.csproj", "{983DE514-B3DB-46FB-A578-778EAB015935}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70A94C61-5E87-48DA-AA58-68EE9AE07BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A94C61-5E87-48DA-AA58-68EE9AE07BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A94C61-5E87-48DA-AA58-68EE9AE07BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A94C61-5E87-48DA-AA58-68EE9AE07BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5909F3B2-A9D7-42A0-B318-1BDCE686743B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5909F3B2-A9D7-42A0-B318-1BDCE686743B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5909F3B2-A9D7-42A0-B318-1BDCE686743B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5909F3B2-A9D7-42A0-B318-1BDCE686743B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983DE514-B3DB-46FB-A578-778EAB015935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983DE514-B3DB-46FB-A578-778EAB015935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983DE514-B3DB-46FB-A578-778EAB015935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983DE514-B3DB-46FB-A578-778EAB015935}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
