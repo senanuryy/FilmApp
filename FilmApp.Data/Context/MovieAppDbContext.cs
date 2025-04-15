@@ -30,7 +30,15 @@ namespace FilmApp.Data.Context
             modelBuilder.ApplyConfiguration(new SessionConfiguration());            
             modelBuilder.ApplyConfiguration(new UserConfiguration());
 
-            
+            modelBuilder.Entity<SettingEntity>().HasData(
+                new SettingEntity()
+                {
+                    Id = 1,
+                    MaintenenceMode = false,
+                });
+
+            base.OnModelCreating(modelBuilder);
+
         }
 
         public DbSet<GenreEntity> Genres => Set<GenreEntity>();
@@ -39,5 +47,6 @@ namespace FilmApp.Data.Context
         public DbSet<ReservationEntity> Reservations => Set<ReservationEntity>();
         public DbSet<SessionEntity> Sessions => Set<SessionEntity>();
         public DbSet<UserEntity> Users => Set<UserEntity>();
+        public DbSet<SettingEntity> Settings => Set<SettingEntity>();
     }
 }

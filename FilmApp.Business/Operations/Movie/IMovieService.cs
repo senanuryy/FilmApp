@@ -11,5 +11,11 @@ namespace FilmApp.Business.Operations.Movie
     public interface IMovieService
     {
         Task<ServiceMessage> AddMovie(AddMovieDto movie);
+        Task<MovieDto> GetMovie(int id);
+        Task<List<MovieDto>> GetMovies();
+        Task<ServiceMessage> AdjustMovieImdb(int id, int changeTo);
+        Task<ServiceMessage> DeleteMovie(int id);
+
+        Task<ServiceMessage> UpdateMovie(UpdateMovieDto movie);
     }
 }

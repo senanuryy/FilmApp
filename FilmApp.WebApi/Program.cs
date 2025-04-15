@@ -2,10 +2,12 @@ using System.Text;
 using FilmApp.Business.DataProtection;
 using FilmApp.Business.Operations.Genre;
 using FilmApp.Business.Operations.Movie;
+using FilmApp.Business.Operations.Setting;
 using FilmApp.Business.Operations.User;
 using FilmApp.Data.Context;
 using FilmApp.Data.Repositories;
 using FilmApp.Data.UnitOfWork;
+using FilmApp.WebApi.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
@@ -85,6 +87,8 @@ builder.Services.AddScoped<IGenreService, GenreManager>();
 
 builder.Services.AddScoped<IMovieService, MovieManager>();
 
+builder.Services.AddScoped<ISettingService, SettingManager>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -93,6 +97,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMaintenanceMode();
 
 app.UseHttpsRedirection();
 
