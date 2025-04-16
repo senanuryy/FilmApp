@@ -54,7 +54,7 @@ namespace FilmApp.WebApi.Controllers
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
-            } // TODO: İleride action filter olarak kodlanacak
+            } 
 
             var result = _userService.LoginUser(new LoginUserDto { Email = request.Email, Password = request.Password });
 
@@ -87,7 +87,7 @@ namespace FilmApp.WebApi.Controllers
         }
 
         [HttpGet("me")]
-        [Authorize] // Token yoksa cevap yok!
+        [Authorize] 
         public IActionResult GetMyUser()
         {
             return Ok();

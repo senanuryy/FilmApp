@@ -12,7 +12,7 @@ namespace FilmApp.WebApi.Filters
         {
             var now = DateTime.Now.TimeOfDay;
 
-            StartTime = "23:00";
+            StartTime = "22:00";
             EndTime = "02:59";
 
             if (now >= TimeSpan.Parse(StartTime) && now <= TimeSpan.Parse(EndTime))

@@ -100,6 +100,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseMaintenanceMode();
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
